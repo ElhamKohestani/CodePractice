@@ -1,4 +1,5 @@
-﻿using HackerRankProblemSolving.MediumLevelChallenges;
+﻿using HackerRankProblemSolving.EasyLevelChallenges;
+using HackerRankProblemSolving.MediumLevelChallenges;
 using System.Diagnostics;
 
 namespace HackerRankProblemSolving.Utils
@@ -23,6 +24,15 @@ namespace HackerRankProblemSolving.Utils
 
             Console.WriteLine($"Running test for Climbing LeaderBoard Test. Time elapsed {watcher.ElapsedMilliseconds} ms");
 
+        }
+
+        public static void SequenceEquationTest()
+        {
+            int[] p = new[] { 5, 2, 1, 3, 4 };
+            var res = SequenceEquation.permutationEquation(p.ToList());
+
+            foreach (var r in res)
+                Console.WriteLine(r);
         }
     }
 }
